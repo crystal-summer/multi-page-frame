@@ -1,0 +1,22 @@
+import Vue from 'vue'
+import 'amfe-flexible'
+import fastClick from 'fastclick'
+
+// vant
+import Vant from 'vant'
+import 'vant/lib/index.css'
+
+import App from './${config._filename}.vue'
+${config.router ? "import router from './router'" : ""}
+${config.store ? "import store from './store'" : ""}
+Vue.use(Vant)
+
+// 300ms延迟
+fastClick.attach(document.body);
+
+Vue.config.productionTip = false
+new Vue({
+    ${config.router ? "router," : ""}
+    ${config.store ? "store," : ""}
+    render: h => h(App)
+}).$mount('#app')

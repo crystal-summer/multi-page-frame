@@ -1,0 +1,25 @@
+<template>
+    <div>
+      <router-view></router-view>
+    </div>
+</template>
+<script>
+
+export default {
+  data () {
+    return {
+
+    }
+  },
+  components: {
+
+  },
+  created () {},
+  mounted () {},
+  methods: {}
+}
+</script>
+<style lang="scss" scoped='scoped'>
+// scss已使用px2rem，直接使用37.5适配的px就行
+${config.css ? "@import './scss/" + config._filename + ".scss';" : ''}
+</style>
