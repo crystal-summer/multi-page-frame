@@ -22,7 +22,7 @@ module.exports = {
       },
       html: {
         template: path.join(__dirname, `./template/${dir}/html.template`),
-        filename: path.join(__dirname, `../public/${name}.html`)
+        filename: path.join(__dirname, `../src/${name}.html`)
       },
       js: {
         template: path.join(__dirname, `./template/${dir}/js.template`),
